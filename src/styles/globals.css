@@ -1,0 +1,107 @@
+/* Hallmark · macrostructure: Manifesto · tone: austere-technical · anchor hue: 42 (ember)
+ * Pre-emit critique: Philosophy 5 · Hierarchy 5 · Execution 4 · Specificity 5 · Restraint 5 · Variety 4
+ */
+
+@import "./tokens.css";
+@import "tailwindcss";
+
+@theme inline {
+  --color-void: var(--hf-void);
+  --color-surface: var(--hf-surface);
+  --color-raised: var(--hf-raised);
+  --color-overlay: var(--hf-overlay);
+  --color-fg: var(--hf-fg);
+  --color-fg-2: var(--hf-fg-2);
+  --color-fg-3: var(--hf-fg-3);
+  --color-edge: var(--hf-edge);
+  --color-edge-2: var(--hf-edge-2);
+  --color-ember: var(--hf-ember);
+  --color-ember-bright: var(--hf-ember-bright);
+  --color-ember-soft: var(--hf-ember-soft);
+
+  --font-sans: var(--hf-font-sans);
+  --font-display: var(--hf-font-display);
+  --font-mono: var(--hf-font-mono);
+
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
+  --animate-pulse-dot-slow: pulse-dot 3.6s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  html,
+  body {
+    overflow-x: clip;
+  }
+  body {
+    background-color: var(--hf-void);
+    color: var(--hf-fg);
+    font-family: var(--hf-font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background-color: var(--hf-ember);
+    color: var(--hf-void);
+  }
+  :focus-visible {
+    outline: 2px solid var(--hf-ember);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  /* Reserve scrollbar-gutter to avoid layout shift across routes */
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+@layer components {
+  .container-hf {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 640px) {
+    .container-hf { padding-inline: 2rem; }
+  }
+
+  /* Section eyebrow / kicker — small uppercase mono label */
+  .eyebrow {
+    font-family: var(--hf-font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--hf-fg-3);
+  }
+
+  /* Thin technical hairline */
+  .hairline {
+    border-color: var(--hf-edge);
+  }
+
+  .bg-grid-dots {
+    background-image: radial-gradient(rgb(255 255 255 / 0.045) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

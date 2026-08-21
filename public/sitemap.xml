@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://hivefoundry.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://hivefoundry.com/models</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hivefoundry.com/models/hive</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hivefoundry.com/models/hive-pro</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hivefoundry.com/models/hive-max</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hivefoundry.com/research</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hivefoundry.com/developers</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hivefoundry.com/company</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://hivefoundry.com/careers</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://hivefoundry.com/updates</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+</urlset>

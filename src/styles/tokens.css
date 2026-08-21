@@ -1,0 +1,38 @@
+/*
+ * Hive Foundry design tokens.
+ * Single source of truth — referenced by tailwind v4 `@theme` and any plain CSS.
+ * Palette is monochrome-first by design; the ember accent appears sparingly.
+ */
+:root {
+  /* Surfaces */
+  --hf-void: #050505;
+  --hf-surface: #0a0a0a;
+  --hf-raised: #111111;
+  --hf-overlay: #161616;
+
+  /* Text */
+  --hf-fg: #f5f5f5;
+  --hf-fg-2: #a1a1aa;
+  --hf-fg-3: #71717a;
+
+  /* Rules */
+  --hf-edge: rgb(255 255 255 / 0.08);
+  --hf-edge-2: rgb(255 255 255 / 0.16);
+
+  /* Accent — restrained ember */
+  --hf-ember: #e8a33d;
+  --hf-ember-bright: #f6c169;
+  --hf-ember-soft: rgb(232 163 61 / 0.12);
+
+  /* Type */
+  --hf-font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --hf-font-display: "Space Grotesk Variable", "Inter Variable", ui-sans-serif, sans-serif;
+  --hf-font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Motion */
+  --hf-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --hf-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --hf-dur-fast: 200ms;
+  --hf-dur-med: 400ms;
+  --hf-dur-slow: 650ms;
+}
